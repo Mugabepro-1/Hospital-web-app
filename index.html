@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="icon.png">
+    <title>Serivisi zo kwa Muganga</title>
+    <style>
+      /* CSS styling for the website */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #756464;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #ffffff;
+        color: #fff;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      /* Add additional styles for the background image */
+      .background-image {
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: rgb(142, 247, 67);">Ivuze ukoresheje telefoni</h1>
+    </header>
+
+    <nav>
+      <ul style="color: brown;">
+        <a href="">Ahabanza</a
+        >|||
+        <a href="id.html">Umwirondoro</a
+        >|||
+        <a href="kwis.html">Kwisuzumisha</a
+        >|||
+        <a href="draft.html">Ibyakoreshejwe</a
+        >|||
+        <a href="pay.html">Kwishyura</a
+        >|||
+        <a href="help.html">Ubufasha</a>
+      </ul>
+    </nav>
+
+    <div class="background-image">
+      <div class="container">
+        <h2>MURAKAZA NEZA MU KWIVUZA UKORESHEJE TELEFONI</h2>
+        <p>
+          Ibisobanuro ku buryo ugonba gukoresha iyi serivisi, n'icyo ugomba
+          guhitamo mu byavuzwe haruguru.
+        </p>
+        <!-- Content for Home tab -->
+        <div id="home">
+          <h3 style="color:aqua ;">HITAMO: UMWIRONDORO</h3>
+          <p>Ushyiremo ibikuranga.</p>
+        </div>
+        <!-- Content for Payment tab -->
+        <div id="payment">
+          <h3 style="color:aqua ;">HITAMO: KWISUZUMISHA</h3>
+          <p>Ushyiremo uko wumva umerewe usuzumwe ndetse uhabwe n'imiti.</p>
+        </div>
+        <!-- Content for Database tab -->
+        <div id="database">
+          <h3 style="color:aqua ;">HITAMO: IBYAKORESHEJWE</h3>
+          <p>
+            Ushyiremo ibyakoreshejwe ndetse n' ibyo wahawe hamwe n'igiciro
+            cyabyo kugirango uhabwe sesrivisi yo kwivuza.
+          </p>
+          <div class="half-horizontal-tab">
+            <div class="slideshow">
+              <img src="muga.jfif" alt="Slide 1" style="display: block" />
+              <img
+                style="width: 7cm"
+                height="200cm"
+                src="ummuro.jfif"
+                alt="Slide 2"
+              />
+              <img src="imurongo.jfif" alt="Slide 3" />
+            </div>
+            <div class="tab-content">
+              <h2>
+                Twamagane gutonda imirongo no gutinda kwa muganga dutegereje
+                serivisi zo kwisuzumisha no kwishyura ngo dutahe.
+              </h2>
+              <p>MURWARE UBUKIRA.</p>
+            </div>
+          </div>
+
+          <!-- Add JavaScript to control the slideshow -->
+          <script>
+            // JavaScript code for slideshow functionality
+            const slideshowImages = document.querySelectorAll(".slideshow img");
+            let imageIndex = 0;
+
+            function showNextImage() {
+              slideshowImages[imageIndex].style.display = "none";
+              imageIndex = (imageIndex + 1) % slideshowImages.length;
+              slideshowImages[imageIndex].style.display = "block";
+            }
+
+            setInterval(showNextImage, 8000);
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

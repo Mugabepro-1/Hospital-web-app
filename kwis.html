@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="pay.png">
+  <title>Data Entry Tab</title>
+  <style>
+    /* CSS styling for the tab */
+    body {
+      background-image: url("ste.jfif");
+      <!-- background-image:url("ste.jfif");
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 800px; -->
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .tab {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .tab .form {
+      flex: 1;
+      padding: 20px;
+    }
+    .tab .form h2 {
+      margin-bottom: 20px;
+    }
+    .tab .form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .tab .form input[type="text"],
+    .tab .form input[type="date"],
+    .tab .form input[type="number"],
+    .tab .form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .tab .form input[type="radio"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab">
+    <div class="form">
+      <h2>KWISUZUMISHA</h2>
+      <form>
+        <label for="name">Uko wumva umerewe muri rusange:</label>
+        <textarea id="text" name="address" rows="6" required></textarea>
+
+        <label for="name">Ese ubwo burwayi waba ubusanganwe:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Igice cy' umubiri wumva uribwa:</label>
+        <input type="text"  placeholder="" id="dob" name="dob" required>
+
+        <label for="id">Igihe gishize ufashwe n'indwara:</label>
+        <input type="text" id="id" name="id" >
+
+        
+
+       
+          
+        </select>
+
+    
+
+        <input type="submit" value="Kwemeza">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

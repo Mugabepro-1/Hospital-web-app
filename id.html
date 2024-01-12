@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="foam.png">
+  <title>Data Entry Tab</title>
+  <style>
+    /* CSS styling for the tab */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .tab {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .tab .form {
+      flex: 1;
+      padding: 20px;
+    }
+    .tab .form h2 {
+      margin-bottom: 20px;
+    }
+    .tab .form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .tab .form input[type="text"],
+    .tab .form input[type="date"],
+    .tab .form input[type="number"],
+    .tab .form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .tab .form input[type="radio"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab">
+    <div class="form">
+      <h2>UZUZA UMWIRONDORO WAWE</h2>
+      <form>
+        <label for="name">Amazina:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Itariki y'amavuko:</label>
+        <input type="date"  placeholder="  /   /" id="dob" name="dob" required>
+
+        <label for="id">Indangamuntu:</label>
+        <input type="text" id="id" name="id" >
+
+        <label for="phone">Nomero ya telefoni:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="gender">Igitsina:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Gabo</option>
+          <option value="female">Gore</option>
+          
+        </select>
+
+        <label for="address">Aho ubarizwa:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

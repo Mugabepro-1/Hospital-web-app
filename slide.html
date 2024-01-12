@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slideshow Tab</title>
+  <style>
+    /* CSS styling for the slideshow tab */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .fullscreen-tab {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      overflow: hidden;
+    }
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .slideshow img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: fade 10s ease-in-out infinite;
+    }
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      33% {
+        opacity: 1;
+      }
+      53% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .slideshow .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="fullscreen-tab">
+    <div class="slideshow">
+      <img src="muga.jfif" alt="Slide 1">
+      <img src="imurongo.jfif" alt="Slide 2">
+      <img src="ummuro.jfif" alt="Slide 3">
+      <div class="caption">Slideshow Caption</div>
+    </div>
+  </div>
+
+  <!-- Add JavaScript to control the slideshow -->
+  <script>
+    // JavaScript code for slideshow functionality
+    const slideshowImages = document.querySelectorAll('.slideshow img');
+    let imageIndex = 0;
+
+    function showNextImage() {
+      slideshowImages[imageIndex].style.opacity = 0;
+      imageIndex = (imageIndex + 1) % slideshowImages.length;
+      slideshowImages[imageIndex].style.opacity = 1;
+    }
+
+    setInterval(showNextImage, 5000);
+  </script>
+</body>
+</html>
